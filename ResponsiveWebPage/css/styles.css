@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Lora', sans-serif;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 35px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+a {
+  color: cyan;
+  transition: all 0.2s ease-in-out;
+}
+
+a:focus,
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
