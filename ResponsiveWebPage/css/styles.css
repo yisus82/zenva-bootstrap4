@@ -146,6 +146,21 @@ a:hover {
   padding: 3rem;
 }
 
+.doc-section {
+  background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
+  background-color: black;
+  background-size: cover;
+  color: white;
+}
+
+.btn {
+  border-radius: 0;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
 @media (min-width: 768px) {
   p {
     font-size: 18px;
