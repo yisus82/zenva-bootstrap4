@@ -79,58 +79,125 @@
       </form>
 
       <form class="my-4">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="email4">Email</label>
-            <input type="email" id="email4" placeholder="Email" class="form-control" />
+        <fieldset class="form-group">
+          <legend class="text-secondary">PERSONAL INFO</legend>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email4">Email</label>
+              <input type="email" id="email4" placeholder="Email" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Password" class="form-control" />
+            </div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Password" class="form-control" />
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Your address" />
           </div>
-        </div>
 
-        <div class="form-group">
-          <label for="address">Address</label>
-          <input type="text" class="form-control" id="address" placeholder="Your address" />
-        </div>
+          <div class="form-group">
+            <label for="address2">Address 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address2"
+              placeholder="Apartment, studio or floor"
+            />
+          </div>
 
-        <div class="form-group">
-          <label for="address2">Address 2</label>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" placeholder="City" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="password">State</label>
+              <select id="state" class="form-control">
+                <option selected>Choose...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="Zip" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">Check Me Out</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="text-secondary">CHECK BOXES</legend>
           <input
-            type="text"
             class="form-control"
-            id="address2"
-            placeholder="Apartment, studio or floor"
+            type="text"
+            placeholder="YOU CAN PLACE READ ONLY TEXT HERE."
+            readonly
           />
-        </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="city">City</label>
-            <input type="text" class="form-control" id="city" placeholder="City" />
-          </div>
-          <div class="form-group col-md-4">
-            <label for="password">State</label>
-            <select id="state" class="form-control">
-              <option selected>Choose...</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="zip">Zip</label>
-            <input type="text" class="form-control" id="zip" placeholder="Zip" />
-          </div>
-        </div>
-
-        <div class="form-group">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">Check Me Out</label>
+            <input class="form-check-input" type="checkbox" value="" id="c1" />
+            <label class="form-check-label" for="c1">
+              Plain Checkbox 1
+            </label>
           </div>
-        </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="c2" />
+            <label class="form-check-label" for="c2">
+              Plain Checkbox 2
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="c3" disabled />
+            <label class="form-check-label" for="c3">
+              Disabled Checkbox 3
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="text-secondary">RADIO BUTTONS</legend>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radioFamily"
+              id="r1"
+              value="option1"
+              checked
+            />
+            <label class="form-check-label" for="r1">Radio Button 1</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radioFamily"
+              id="r2"
+              value="option2"
+            />
+            <label class="form-check-label" for="r2">Radio Button 2</label>
+          </div>
+          <div class="form-check disabled">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="radioFamily"
+              id="r3"
+              value="option3"
+              disabled
+            />
+            <label class="form-check-label" for="r3">Radio Button 3</label>
+          </div>
+        </fieldset>
 
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
